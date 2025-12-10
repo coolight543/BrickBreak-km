@@ -24,46 +24,72 @@ import java.awt.*;
 	}
 	
 	//methods:
+	//precondition: g, x, y, radius is not null
+	//postcondition: the ball is drawn
 	public void draw(Graphics g)
 	{
 		g.setColor(Color.MAGENTA);
 		g.fillOval(x,y,radius,radius);
 
 	}
+	//precondition: y is not null
+	//postcondition: return the y position of ball
 	public int getYpos()
 	{
 		return this.y;
 	}
+	//precondition: x is not null
+	//postcondition: return the x position of ball
 	public int getXpos()
 	{
 		return this.x;
 	}
+	//precondition: radius is not null
+	//postcondition: get the diameter of the ball
 	public int getSize()
 	{
-		return this.diameter;
+		return 2*radius;
 	}
+	//precondition: yVelocity is not null
+	//postcondition: the ball changes y-direction
 	public void reverseY()
 	{
 		yVelocity = yVelocity * (-1);
 	}
+	//precondition: xVelocity is not null
+	//postcondition: the ball changes x-direction
 	public void reverseX()
 	{
 		xVelocity = xVelocity * (-1);
 	}
+	//precondition: xVelocity is not null
+	//postcondition: give the xVelocity
 	public void setXVelocity(int xVelocity)
 	{
 		this.xVelocity = xVelocity;
 	}
+	//precondition: x is not null
+	//postcondition: set the initial x-position of ball
 	public void setX(int x)
 	{
 		this.x = x;
 	}
+	//precondition: y is not null
+	//postcondition: set the initial y-position of ball
 	public void setY(int y)
 	{
 		this.y = y;
 	}
-	public void setYVelocity(int yVelocity);
+	//precondition: yVelocity is not null
+	//postcondition: set the initial yVelocity
+	public void setYVelocity(int yVelocity)
 	{
 		this.yVelocity = yVelocity;
 	}
-	public void mo
+	//precondition: xVelocity and yVelocity are not null
+	//postcondition: move the ball
+	public void move()
+	{
+		setXVelocity(1);
+		setYVelocity(1);
+	}
