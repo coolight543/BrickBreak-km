@@ -1,9 +1,11 @@
 // Kuang Miao
 package com.BrickBreak;
 import java.awt.*;
+import java.awt.Color;
+import java.awt.Graphics;
 
 	//your code here!
-	
+	public class Ball{
 	//don't forget you need instance variables:
 	private int x;
 	private int y;
@@ -19,7 +21,9 @@ import java.awt.*;
 	{
 		this.x = x;
 		this.y = y;
-		this.diameter = 2 * radius;
+		this.radius = diameter/2;
+		this.xVelocity = 0;
+		this.yVelocity = 0;
 
 	}
 	
@@ -90,6 +94,7 @@ import java.awt.*;
 	//postcondition: move the ball
 	public void move()
 	{
-		setXVelocity(1);
-		setYVelocity(1);
+		x += xVelocity;
+		y += yVelocity;
+	}
 	}

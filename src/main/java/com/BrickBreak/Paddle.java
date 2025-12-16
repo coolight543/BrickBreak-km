@@ -1,9 +1,8 @@
 package com.BrickBreak;
 
-import java.awt.Graphics;
 import java.awt.*;
 
-public class Paddle {
+public class Paddle{
 
 
 	//your code here!
@@ -27,6 +26,11 @@ public class Paddle {
 
 	}
 	//methods:
+	public void draw(Graphics g)
+	{
+		g.setColor(Color.GREEN);
+		g.fillRect(x,y,width,height);
+	}
 	public int getX()
 	{
 		return this.x;
@@ -64,5 +68,16 @@ public class Paddle {
 	{
 		this.x = x;
 	}
-	
+	public void setY(int y)
+	{
+		this.y = y;
+	}
+	public void setWidth(int width)
+	{
+		this.width = width;
+	}
+	public void setHeight(int height)
+	{
+		this.height = height;
+	}
 }
