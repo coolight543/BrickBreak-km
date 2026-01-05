@@ -1,4 +1,6 @@
-
+// Kuang Miao
+// Date: 01/05/2026
+// Description: This component is the paddle which the user will control to hit the ball.
 package com.BrickBreak;
 
 import java.awt.*;
