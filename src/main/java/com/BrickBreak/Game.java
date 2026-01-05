@@ -1,6 +1,6 @@
 /*
- * Author: Mr. M
- * Date: 12/02/24
+ * Author: Kuang Miao
+ * Date: 01/02/26
  * Description: Boostrap class to set up the screen and widgets. Nothing exciting going on here.
  * Take a look at BrickBreak.java for all the exciting stuff!
  */

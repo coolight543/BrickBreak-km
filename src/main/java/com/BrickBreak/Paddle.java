@@ -1,3 +1,4 @@
+
 package com.BrickBreak;
 
 import java.awt.*;
@@ -23,6 +24,7 @@ public class Paddle{
 		this.y = y;
 		this.width = width;
 		this.height = height;
+		this.velocity = 0;
 
 	}
 	//methods:

@@ -1,4 +1,6 @@
 // Kuang Miao
+// Date: 01/05/2026
+// Description: This component is the moving ball which the user will control indirectly via the paddle.
 package com.BrickBreak;
 import java.awt.*;
 import java.awt.Color;
