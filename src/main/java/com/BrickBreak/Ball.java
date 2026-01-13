@@ -24,8 +24,8 @@ import java.awt.Graphics;
 		this.x = x;
 		this.y = y;
 		this.radius = diameter/2;
-		this.xVelocity = 2;
-		this.yVelocity = 2;
+		xVelocity = 2;
+		yVelocity = 2;
 
 	}
 	
