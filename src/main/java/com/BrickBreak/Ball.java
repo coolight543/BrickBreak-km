@@ -92,7 +92,7 @@ import java.awt.Graphics;
 	{
 		this.yVelocity = yVelocity;
 	}
-	//precondition: xVelocity and yVelocity are not null
+	//precondition: xVelocity and yVelocity are not null, must press the right arrow key to start
 	//postcondition: move the ball
 	public void move()
 	{
